@@ -21,7 +21,7 @@ if (false) {
 
 			alasql.options.datetimeformat = 'sql';
 			var res = alasql.value('select cast("1998-01-01" as date)');
-			assert(res, '1998-01-01');
+			assert.equal(res, '1998-01-01');
 			done();
 		});
 	});
